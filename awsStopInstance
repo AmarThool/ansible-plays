@@ -2,8 +2,8 @@
   tasks:
        - name: stop ec2 instance
          ec2:
-            aws_access_key: AKIAI7WCX3NFZJTRQJSA
-            aws_secret_key: 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
+            aws_access_key: 
+            aws_secret_key: 
             instance_ids: i-0b2aafc372ff93d69
             region: us-east-2
             state: absent
