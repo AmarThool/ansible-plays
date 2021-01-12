@@ -1,8 +1,8 @@
 - hosts: localhost
   tasks:
      - ec2:
-         aws_access_key: AKIAI7WCX3NFZJTRQJSA
-         aws_secret_key: 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
+         aws_access_key: 
+         aws_secret_key: 
          key_name: ansible-key
          group: ansible-sg
          instance_type: t2.micro
