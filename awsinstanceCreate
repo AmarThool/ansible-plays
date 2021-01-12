@@ -1,0 +1,18 @@
+- hosts: localhost
+  tasks:
+     - ec2:
+         aws_access_key: AKIAI7WCX3NFZJTRQJSA
+         aws_secret_key: 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
+         key_name: ansible-key
+         group: ansible-sg
+         instance_type: t2.micro
+         image: ami-0a0ad6b70e61be944
+         wait: yes
+         wait_timeout: 500
+         count: 1
+         instance_tags:
+              Name: Prod-instance
+         monitoring: yes
+         region: us-east-2
+         vpc_subnet_id: subnet-e8ce2183
+         assign_public_ip: yes
